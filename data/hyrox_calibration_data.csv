@@ -1,0 +1,28 @@
+Date,Exercice,Temps_Secondes,Etat_Initial,FC_Moyenne_BPM,RPE_sur_10
+2025-11-12,Course 1km,340,Frais,158,7
+2025-11-12,Sled Push,180,Frais,165,8
+2025-11-12,Course 1km,355,Fatigue,164,8
+2025-11-14,SkiErg,280,Frais,155,7
+2025-11-14,RowErg,290,Frais,152,7
+2025-11-14,Course 1km,350,Fatigue,162,8
+2025-11-17,Wall Balls,240,Frais,168,9
+2025-11-17,Burpee Broad Jumps,300,Frais,160,8
+2025-11-17,Wall Balls,260,Fatigue,172,9
+2025-11-19,Sled Pull,240,Frais,158,8
+2025-11-19,Farmers Carry,120,Frais,150,7
+2025-11-19,Sled Pull,260,Fatigue,165,9
+2025-11-21,Sandbag Lunges,240,Frais,162,8
+2025-11-21,Course 1km,360,Fatigue,166,9
+2025-11-21,Sandbag Lunges,270,Fatigue,170,9
+2025-11-24,Course 1km,335,Frais,160,8
+2025-11-24,Course 1km,345,Frais,161,8
+2025-11-26,Sled Push,195,Frais,164,8
+2025-11-26,Sled Pull,250,Frais,160,8
+2025-11-28,SkiErg,295,Fatigue,162,8
+2025-11-28,RowErg,310,Fatigue,160,8
+2025-12-01,Burpee Broad Jumps,330,Fatigue,168,9
+2025-12-01,Farmers Carry,140,Fatigue,160,9
+2025-12-03,Course 1km,330,Frais,155,7
+2025-12-03,Wall Balls,230,Frais,165,8
+2025-12-05,Course 1km,370,Fatigue,168,9
+2025-12-05,Sled Push,210,Fatigue,170,9

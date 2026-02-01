@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+Explanation/*.aux
+Explanation/*.log
+Explanation/*.synctex.gz
+Explanation/*.out
+
+
+
+
+
+
+
+
+# Environments
+.env
+
+# IDEs
+.vscode/
+
+
+hyrox_optimal_strategy.png
