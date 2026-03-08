@@ -88,11 +88,23 @@ The Rox Zone is a specialized obstacle segment introduced in modern Hyrox format
     * Open the file `src/config.py`.
     * Adjust `PERFORMANCE_BOUNDS` to match your realistic performance range (your fastest and slowest possible times for each segment).
     * You can also adjust `NUM_STRATEGIES_TO_SIMULATE` to increase the number of simulations (more precise, but slower).
+    * Note: The baseline heart rate (default 160 bpm) can also be easily set via the `-hr` command-line flag without modifying the config file.
 
 4.  **Run the program**:
     * From the root of the `Hyrox_ODE` folder, execute the following command in your terminal:
     ```bash
-    python main.py
+    python main.py data/hyrox_calibration_data.csv
+    ```
+    
+    * **Optional arguments**:
+      * `-hr` or `--heart-rate`: Set a custom baseline heart rate for calibration (default: 160 bpm)
+      ```bash
+      python main.py data/hyrox_calibration_data.csv -hr 150
+      ```
+    
+    * **View help**:
+    ```bash
+    python main.py -h
     ```
 
 ### Interpreting Results
@@ -123,8 +135,14 @@ cd Hyrox_ODE
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the optimizer
-python main.py
+# Run the optimizer with default baseline heart rate (160 bpm)
+python main.py data/hyrox_calibration_data.csv
+
+# Or with a custom baseline heart rate
+python main.py data/hyrox_calibration_data.csv -hr 150
+
+# View available options
+python main.py -h
 ```
 
 The results will be displayed in the console and a strategy graph will be saved as `hyrox_optimal_strategy.png`.

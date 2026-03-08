@@ -4,6 +4,7 @@ Explanation/*.aux
 Explanation/*.log
 Explanation/*.synctex.gz
 Explanation/*.out
+data/my_data.csv
 
 
 

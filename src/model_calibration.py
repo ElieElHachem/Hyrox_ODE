@@ -18,8 +18,8 @@ def calibrate_model(data):
     calibrated_params = DEFAULT_MODEL_PARAMS.copy()
     
     # Fréquence cardiaque de référence pour un effort "standard"
-    baseline_hr = 160.0
-    
+    baseline_hr = DEFAULT_MODEL_PARAMS['baseline_hr']
+
     print("Ajustement des coefficients de coût en fonction de vos données :")
 
     for param_key, default_value in DEFAULT_MODEL_PARAMS.items():

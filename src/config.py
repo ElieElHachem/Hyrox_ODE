@@ -1,10 +1,16 @@
 # src/config.py
+import argparse
 
-# --- Fichiers ---
-CALIBRATION_DATA_FILE = 'data/hyrox_calibration_data.csv'
+# --- Parsing des arguments ---
+parser = argparse.ArgumentParser(description='Hyrox Race Strategy Optimization')
+parser.add_argument('calibration_file', help='Path to calibration data CSV file')
+parser.add_argument('-hr', '--heart-rate', type=float, default=160.0, 
+                    help='Baseline heart rate for calibration (default: 160 bpm)')
+args = parser.parse_args()
 
-# --- Paramètres de Simulation ---
-NUM_STRATEGIES_TO_SIMULATE = 2000
+CALIBRATION_DATA_FILE = args.calibration_file
+baseline_hr = args.heart_rate
+NUM_STRATEGIES_TO_SIMULATE = 3000
 ENERGY_INITIAL = 1
 ENERGY_CRITICAL_THRESHOLD = 0.02
 
@@ -36,6 +42,7 @@ PERFORMANCE_BOUNDS = {
 
 # RETOUR AUX VALEURS STANDARDS (Calibration affinera)
 DEFAULT_MODEL_PARAMS = {
+    'baseline_hr': baseline_hr,  # Set from command-line argument
     'k_run': 0.000035, 'alpha_run': 2.2,
     'k_rox': 0.00015,  
     'k_ski_erg': 0.00019, 'k_sled_push': 0.00045, 'k_sled_pull': 0.00045,
